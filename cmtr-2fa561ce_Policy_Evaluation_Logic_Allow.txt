@@ -1,0 +1,83 @@
+cmtr-2fa561ce
+
+$Env:AWS_ACCESS_KEY_ID={ACCESS_KEY_ID}
+$Env:AWS_SECRET_ACCESS_KEY={AWS_SECRET_ACCESS_KEY}
+$Env:AWS_SESSION_TOKEN={AWS_SESSION_TOKEN}
+$env:AWS_DEFAULT_REGION = "eu-central-1"
+
+
+aws iam list-roles --query "Roles[?starts_with(RoleName, 'cmtr-2fa561ce')].RoleName"
+
+cmtr-2fa561ce-iam-pela-iam_role
+arn:aws:iam::905418349556:role/cmtr-2fa561ce-iam-pela-iam_role
+aws iam get-role --role-name cmtr-2fa561ce-iam-pela-iam_role
+
+aws iam list-attached-role-policies --role-name cmtr-2fa561ce-iam-pela-iam_role
+ 
+ 
+ create file list_buckets_policy.json with body 
+ {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "s3:ListAllMyBuckets",
+            "Resource": "*"
+        }
+    ]
+}
+
+aws iam create-policy --policy-name cmtr-2fa561ce-ListAllBucketsPolicy --policy-document file://./cmtr-2fa561ce_list_buckets_policy.json
+
+as result 
+{
+    "Policy": {
+        "PolicyName": "cmtr-2fa561ce-ListAllBucketsPolicy",
+        "PolicyId": "ANPA5FTZDTP2IIDEFCMPO",
+        "Arn": "arn:aws:iam::905418349556:policy/cmtr-2fa561ce-ListAllBucketsPolicy",
+        "Path": "/",
+        "DefaultVersionId": "v1",
+        "AttachmentCount": 0,
+        "PermissionsBoundaryUsageCount": 0,
+        "IsAttachable": true,
+        "CreateDate": "2025-02-05T17:23:15+00:00",
+        "UpdateDate": "2025-02-05T17:23:15+00:00"
+    }
+}
+
+aws iam attach-role-policy --role-name cmtr-2fa561ce-iam-pela-iam_role --policy-arn "arn:aws:iam::905418349556:policy/cmtr-2fa561ce-ListAllBucketsPolicy"
+
+ 
+ 
+ aws s3api list-buckets --query "Buckets[].Name"  | Select-String "cmtr-2fa561ce"
+ 
+ work with cmtr-2fa561ce-iam-pela-bucket-1-5531567
+ 
+ aws s3api get-bucket-policy --bucket cmtr-2fa561ce-iam-peld-bucket-5480082 --output json > existing-policy.json
+ 
+ 
+  create file cmtr-2fa561ce_s3_bucket_policy.json with body 
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::905418349556:role/cmtr-2fa561ce-iam-pela-iam_role"
+      },
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::cmtr-2fa561ce-iam-pela-bucket-1-5531567",
+        "arn:aws:s3:::cmtr-2fa561ce-iam-pela-bucket-1-5531567/*"
+      ]
+    }
+  ]
+}
+
+aws s3api put-bucket-policy --bucket cmtr-2fa561ce-iam-pela-bucket-1-5531567 --policy file://./cmtr-2fa561ce_s3_bucket_policy.json
+
+aws s3api get-bucket-policy --bucket cmtr-2fa561ce-iam-pela-bucket-1-5531567
