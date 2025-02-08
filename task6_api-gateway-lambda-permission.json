@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "apigateway.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:eu-central-1:905418349556:function:cmtr-2fa561ce-api-gwlp-lambda-contacts",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:execute-api:eu-central-1:905418349556:*"
+        }
+      },
+      "Sid": "AllowExecutionFromAPIGateway"
+    }
+  ]
+}
