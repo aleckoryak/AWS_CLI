@@ -38,3 +38,6 @@ https://learn.epam.com/catalog/detailsPage?id=0d80569c-e2af-46c0-afe1-4e7600f518
 
 
 https://www.aws.training/Details/eLearning?id=42594
+
+Scaling Serverless Architectures
+https://explore.skillbuilder.aws/learn/courses/12713/scaling-serverless-architectures
