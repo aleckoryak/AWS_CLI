@@ -41,3 +41,6 @@ https://www.aws.training/Details/eLearning?id=42594
 
 Scaling Serverless Architectures
 https://explore.skillbuilder.aws/learn/courses/12713/scaling-serverless-architectures
+
+Security and Observability for Serverless Applications
+https://explore.skillbuilder.aws/learn/courses/12714/security-and-observability-for-serverless-applications
