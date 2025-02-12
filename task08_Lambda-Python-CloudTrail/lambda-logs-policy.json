@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      Resource": [
+                "arn:aws:logs:eu-central-1:905418349556:log-group:/aws/lambda/cmtr-2fa561ce-lambda-fgufc-lambda:*:*",
+                "arn:aws:logs:eu-central-1:905418349556:log-group:/aws/lambda/cmtr-2fa561ce-lambda-fgufc-lambda:*"
+            ]
+    }
+  ]
+}
