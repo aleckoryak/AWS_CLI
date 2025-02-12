@@ -1,4 +1,7 @@
-task6_Integration_APIGateway_with_Lambda
+task6 Integration of API Gateway with a Lambda function
+
+##  diagram
+![diagram](img.png)
 
 Task Resources
 Region-specific resources are created in the ${aws_region} region. For more details on regional services, see AWS Services by Region.
