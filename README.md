@@ -1,5 +1,4 @@
-# AWS_CLI
-ASW cli examples
+https://explore.skillbuilder.aws/learn/learning-plans/92/serverless-knowledge-badge-readiness-path
 
 
 AWS Technical Essentials
