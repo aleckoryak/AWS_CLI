@@ -47,3 +47,4 @@ https://explore.skillbuilder.aws/learn/courses/12714/security-and-observability-
 Deploying Serverless Applications
 https://explore.skillbuilder.aws/learn/courses/12836/deploying-serverless-applications
 
+SAM https://aws.amazon.com/serverless/getting-started/?serverless.sort-by=item.additionalFields.createdDate&serverless.sort-order=desc
