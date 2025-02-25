@@ -1,6 +1,5 @@
 https://explore.skillbuilder.aws/learn/learning-plans/92/serverless-knowledge-badge-readiness-path
 
-
 AWS Technical Essentials
 https://learn.epam.com/catalog/detailsPage?id=808ac7aa-86e4-45de-97a1-a045f2f80f5d
 https://explore.skillbuilder.aws/learn/course/external/view/elearning/1851/aws-technical-essentials
@@ -16,6 +15,7 @@ Getting into the Serverless Mindset
 https://explore.skillbuilder.aws/learn/courses/105/getting-into-the-serverless-mindset
 https://learn.epam.com/catalog/detailsPage?id=a2ed9927-17eb-45ae-a336-1d00c136e6d5
 https://explore.skillbuilder.aws/learn/courses/99/aws-lambda-foundations
+
 iam
 https://explore.skillbuilder.aws/learn/courses/120/introduction-to-aws-identity-and-access-management-iam DONE
 or the same
@@ -26,7 +26,6 @@ api gateway
 https://explore.skillbuilder.aws/learn/courses/232/introduction-to-amazon-api-gateway/lessons/146967/introduction-to-amazon-api-gateway DONE
 https://explore.skillbuilder.aws/learn/courses/52/amazon-api-gateway-for-serverless-applications DONE
 
-
 Architecting Serverless Applications
 https://explore.skillbuilder.aws/learn/courses/12715/designing-event-driven-architectures
 https://explore.skillbuilder.aws/learn/courses/12716/architecting-serverless-applications
@@ -34,7 +33,6 @@ https://explore.skillbuilder.aws/learn/courses/12716/architecting-serverless-app
 Amazon DynamoDB for Serverless Architectures
 https://explore.skillbuilder.aws/learn/courses/67/amazon-dynamodb-for-serverless-architectures
 https://learn.epam.com/catalog/detailsPage?id=0d80569c-e2af-46c0-afe1-4e7600f51851 todo
-
 
 https://www.aws.training/Details/eLearning?id=42594
 
