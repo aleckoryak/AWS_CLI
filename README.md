@@ -46,3 +46,9 @@ Deploying Serverless Applications
 https://explore.skillbuilder.aws/learn/courses/12836/deploying-serverless-applications
 
 SAM https://aws.amazon.com/serverless/getting-started/?serverless.sort-by=item.additionalFields.createdDate&serverless.sort-order=desc
+
+AWS Cloud Practitioner Essentials
+[aws-cloud-practitioner-essentials](https://explore.skillbuilder.aws/learn/courses/134/aws-cloud-practitioner-essentials)
+
+Architecting on AWS - Online Course Supplement
+https://explore.skillbuilder.aws/learn/courses/8319/architecting-on-aws-online-course-supplement
